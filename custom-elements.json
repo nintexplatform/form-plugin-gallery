@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/iframe/iframe"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/material-textfield/material-textfield"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/styled-input/styled-input"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/animated-logo/animated-logo"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/chart-pie/chart-pie"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./components/material-slider/material-slider"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/utils/events.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "updatePluginValue",
+          "parameters": [
+            {
+              "name": "element",
+              "type": {
+                "text": "HTMLElement"
+              }
+            },
+            {
+              "name": "data",
+              "type": {
+                "text": "{\r\n    bubbles?: boolean;\r\n    cancelable?: boolean;\r\n    composed?: boolean;\r\n    detail?: T;\r\n  }"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "updatePluginValue",
+          "declaration": {
+            "name": "updatePluginValue",
+            "module": "src/utils/events.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/iframe/iframe.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "NintexGalleryIframe",
+          "members": [
+            {
+              "kind": "field",
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "description"
+            },
+            {
+              "kind": "field",
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "src"
+            },
+            {
+              "kind": "field",
+              "name": "height",
+              "type": {
+                "text": "number"
+              },
+              "default": "500",
+              "attribute": "height"
+            },
+            {
+              "kind": "method",
+              "name": "getMetaConfig",
+              "static": true,
+              "return": {
+                "type": {
+                  "text": "Promise<PluginContract> | PluginContract"
+                }
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "description",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "description"
+            },
+            {
+              "name": "src",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "src"
+            },
+            {
+              "name": "height",
+              "type": {
+                "text": "number"
+              },
+              "default": "500",
+              "fieldName": "height"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "nintex-gallery-iframe",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NintexGalleryIframe",
+          "declaration": {
+            "name": "NintexGalleryIframe",
+            "module": "src/components/iframe/iframe.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "nintex-gallery-iframe",
+          "declaration": {
+            "name": "NintexGalleryIframe",
+            "module": "src/components/iframe/iframe.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
