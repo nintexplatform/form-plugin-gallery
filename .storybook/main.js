@@ -10,4 +10,8 @@ module.exports = {
     ],
   }),
   framework: '@storybook/web-components',
+  staticDirs: [
+    { from: '../dist', to: 'gallery' },
+    { from: '../staticwebapp.config.json', to: 'staticwebapp.config.json' },
+  ],
 };
